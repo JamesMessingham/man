@@ -1,0 +1,8 @@
+{
+  "name": "SocialPlayground",
+  "description": "Testing WebSockets",
+  "repository": "https://github.com/GamersVsGaming/SocialPlayground.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
