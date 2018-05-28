@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Nunito';
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 18px;
+    color: #575ed8;
+    background-color: #fff;
+    padding: 15px 0 14px 15px;
+}
+
+#auth{
+  display: none;
+}
+
+#header{
+    border-bottom: 1px solid #eee;
+}
+
+#socket-chat{
+    height: 90vh;
+    display: none;
+    width: 75vw;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+#chat-window{
+    overflow: auto;
+    background: #fff;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+    word-wrap: break-word;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#input-area{
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+#output strong{
+    color: #575ed8;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #ddd;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+@media screen and (max-width: 720px){
+    html, body{
+        overflow: hidden;
+    }
+    #socket-chat{
+        height: 100vh;
+        width: 100vw;
+    }
+}
